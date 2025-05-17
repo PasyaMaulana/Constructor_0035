@@ -107,3 +107,22 @@ float lihatGajiStaff(Staff *s)
 {
     return s->gaji;
 }
+
+int main()
+{
+    Mahasiswa m1("Pasya Achmadinedja Maulana", "20240140035");
+    Dosen d1("Ir. Haris Setyawan, S.T., M.Eng", "D-01", "Asisten Ahli", 15000000);
+    Staff s1("Asep Ramadhan", "ST-01", 5000000);
+    Universitas u;
+
+    d1.beriNilai(&m1, 92.5);
+    m1.tampilkanMahasiswa();
+
+    d1.tampilkanDosen();
+    s1.tampilkanStaff();
+
+    s1.ubahPangkat(&d1, "Lektor");
+    d1.tampilkanDosen();
+
+    return 0;
+}
