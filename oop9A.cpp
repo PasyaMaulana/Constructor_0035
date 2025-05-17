@@ -56,3 +56,30 @@ public:
         cout << endl;
     }
 };
+
+class Staff
+{
+private:
+    int gaji;
+
+public:
+    string nama;
+    string idStaff;
+
+    Staff(string nama, string idStaff, int gaji) : nama(nama), idStaff(idStaff), gaji(gaji) {}
+
+    void ubahPangkat(Dosen *d, string pangkatBaru)
+    {
+        d->pangkat = pangkatBaru;
+    }
+
+    void tampilkanStaff()
+    {
+        cout << "Staff: " << nama << endl;
+        cout << "ID: " << idStaff << endl;
+        cout << "Gaji: Rp." << gaji << endl;
+        cout << endl;
+    }
+
+    friend float lihatGajiStaff(Staff *s);
+};
