@@ -97,3 +97,13 @@ public:
         cout << "Gaji Staff: " << lihatGajiStaff(s) << endl;
     }
 };
+
+float lihatGajiDosen(Dosen *d)
+{
+    return d->gaji;
+}
+
+float lihatGajiStaff(Staff *s)
+{
+    return s->gaji;
+}
