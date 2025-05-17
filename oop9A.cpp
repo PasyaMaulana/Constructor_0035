@@ -83,3 +83,17 @@ public:
 
     friend float lihatGajiStaff(Staff *s);
 };
+
+class Universitas
+{
+public:
+    void cekGajiDosen(Dosen *d)
+    {
+        cout << "Gaji Dosen: " << lihatGajiDosen(d) << endl;
+    }
+
+    void cekGajiStaff(Staff *s)
+    {
+        cout << "Gaji Staff: " << lihatGajiStaff(s) << endl;
+    }
+};
